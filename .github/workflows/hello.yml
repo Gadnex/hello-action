@@ -13,10 +13,10 @@ jobs:
     steps:
       - name: Echo Git commit hash
         run: |
-          echo "Git commit hash: $((GITHUB_SHA))"
+          echo "Git commit hash: ${{ github.sha }}"
       - name: Echo workflow run number
         run: |
-          echo "Github Actions run number: $((GITHUB_RUN_NUMBER))"
+          echo "Github Actions run number: ${{ github.run_number }}"
       - name: Greet a server
         run: |
           echo "Hello server ${{ matrix.server }}"
