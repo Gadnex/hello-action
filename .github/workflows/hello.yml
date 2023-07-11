@@ -23,6 +23,7 @@ on:
 
 jobs:
   log-the-inputs:
+    name: Log the inputs
     runs-on: ubuntu-latest
     steps:
       - name: Echo workflow inputs
