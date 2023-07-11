@@ -11,6 +11,9 @@ jobs:
       matrix:
         server: ["app-server-1", "app-server-2", "db-server"]
     steps:
+      - name: Echo Git commit hash
+        run: |
+          echo "Git commit hash: $((GITHUB_SHA))"
       - name: Echo workflow run number
         run: |
           echo "Github Actions run number: $((GITHUB_RUN_NUMBER))"
