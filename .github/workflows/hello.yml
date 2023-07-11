@@ -37,6 +37,4 @@ jobs:
           ENVIRONMENT: ${{ inputs.environment }}
       - name: Echo workflow run number
         run: |
-          echo "Github Actions run number: $RUN_NUMBER"
-        env:
-          RUN_NUMBER: $((GITHUB_RUN_NUMBER))
+          echo "Github Actions run number: $((GITHUB_RUN_NUMBER))"
